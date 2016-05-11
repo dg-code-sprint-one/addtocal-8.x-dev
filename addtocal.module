@@ -1,0 +1,16 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+
+use Drupal\addtocal\Plugin\Field\FieldFormatter\AddtocalFormatter;
+
+function addtocal_theme($existing, $type, $theme, $path) {
+	  
+  return array(
+    'addtocalformatter' => array(
+      'variables' => array('nid' => NULL, 'loclab' => NULL, 'declab' => NULL),
+    ),
+  );
+}
+

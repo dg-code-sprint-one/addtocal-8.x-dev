@@ -1,0 +1,12 @@
+{{ attach_library('addtocal/global-styling') }}
+
+
+
+<button name="btn" value="addtocal" type="button" class="toggle_1">Add to Calendar </button>
+<div class="socialbtn">
+<a href="{{ path('addtocal.controller', {'nid': nid, 'cal': 'ical','body': declab, 'add':loclab}) }}">iCalendar</a>
+<a href="{{ path('addtocal.controller', {'nid': nid, 'cal': 'outl','body': declab, 'add':loclab}) }}">Outlook</a>
+<a href="{{ path('addtocal.controller', {'nid': nid, 'cal': 'goog','body': declab, 'add':loclab}) }}">Google</a>
+<a href="{{ path('addtocal.controller', {'nid': nid, 'cal': 'yaho','body': declab, 'add':loclab}) }}">Yahoo</a>
+
+
